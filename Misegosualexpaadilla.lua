@@ -1,4 +1,3 @@
--- skate if you cracked this lego script ur infos are leaked on doxbin
 
 local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
@@ -9,7 +8,7 @@ local Window = Library:CreateWindow({
   TabWidth = 160,
   Size = UDim2.fromOffset(580, 460),
   Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
-  Theme = "Black",
+  Theme = "White",
   MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
