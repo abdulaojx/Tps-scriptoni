@@ -174,5 +174,28 @@ Tabs.ImprovedReact:AddButton({
 })
 
 -- Nuovo Toggle per Blue Flame
-local BlueFlame = Tabs.Gamepasses:AddToggle("BlueFlame", {Title = "Blue Flame",
+local BlueFlame = Tabs.Gamepasses:AddToggle("BlueFlame", {Title = "Blue Flame", Default = false })
+
+BlueFlame:OnChanged(function()
+  local Value = Options.BlueFlame.Value
+  if Value then
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = true
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://5366457711"
+      game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 2
+  else
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = false
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundDefaultButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://1595877615"
+      game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 1
+  end
+end)
+
+-- Aggiunta del nuovo codice
+game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.RandomWeather.RandomWeather.Style = "RobloxRoundDefaultButton"
+game:GetService("Players").LocalPlayer.Backpack.TackleGamePass.Value = false
+AnimationTackleLoop:Disconnect()
+
+return Library
+
     
