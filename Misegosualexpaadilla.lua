@@ -556,5 +556,6 @@ RainbowTrail:OnChanged(function()
           end
 end
 
-return library
+end)
+
       
