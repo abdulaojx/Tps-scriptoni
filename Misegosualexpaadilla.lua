@@ -1,14 +1,16 @@
+-- skate if you cracked this lego script ur infos are leaked on doxbin
+
 local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Library:CreateWindow({
-  Title = "mi sego su alexpadilla",
+  Title = "Noba Free Script",
   TabWidth = 160,
   Size = UDim2.fromOffset(580, 460),
-  Acrylic = false,
+  Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
   Theme = "White",
-  MinimizeKey = Enum.KeyCode.LeftControl
+  MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
 local Tabs = {
@@ -28,35 +30,43 @@ local Tabs = {
 Window:SelectTab(1)
 local Options = Library.Options
 
+
 Tabs.Important:AddParagraph({
   Title = "Read!",
   Content = ""
 })
 
+    
+    
 Tabs.Important:AddParagraph({
   Title = "Credits",
-  Content = "solo a Juan Lua si stava segando"
+  Content = "credits to Skittls Mido Lukas Ludaz Kua Skinny Dxv Zzz Skate Hanki Zippy."
 })
 
+
 Tabs.Important:AddParagraph({
-  Title = "JuanLua",
-  Content = "Juan script é goat"
+  Title = "Noba",
+  Content = "Noba scripts is a script community that codes scripts for roblox. join our discord, and socials to find out more about us!"
 })
+
 
 Tabs.Important:AddParagraph({
   Title = "Script",
-  Content = "fatto mentte mi segavo"
+  Content = "did you know that this script took 400 hours just to be directly designed for Tps Street Soccer."
 })
 
 Tabs.Important:AddParagraph({
   Title = "Bugs",
-  Content = "se ci sono ti attacchi al cazzo"
+  Content = "Bugs Can Be Reported Via Discord Server."
 })
 
 Tabs.Important:AddParagraph({
   Title = "Fixes And Updates",
-  Content = "Fixo e aggiorni i bug quando ho voglia"
+  Content = "Fixes and Updates can Be viewed via discord aswell, join up!"
 })
+
+    
+    
 
 Tabs.Important:AddButton({
   Title = "Copy Discord Server Link",
@@ -66,136 +76,485 @@ Tabs.Important:AddButton({
           Content = "Copied the discord server link!",
           Duration = 5 
       })
+  
       setclipboard("https://discord.gg/BPubqQTWyn")
   end
 })
 
+
+-- Bu alttaki kisim
 Tabs.Reach:AddButton({
   Title = "Reach GUI",
   Callback = function()
-    getgenv().Kitten = 5
-    loadstring(game:HttpGet("https://pastebin.com/raw/EdDK6iWA", true))()
-  end    
+            getgenv().Kitten = 5
+loadstring(game:HttpGet("https://pastebin.com/raw/EdDK6iWA",true))()
+    end    
 })
 
 Tabs.Reach:AddButton({
-  Title = "Best reach use it GUI",
+  Title = "best reach use it GUI",
   Callback = function()
-    getgenv().Kitten = 5
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zkkekjdjosjdodsjwoekdkskdksksuxisjeufu/Cuaaguaokchafhoochepxiyggu933yg9du9gd9gu399uudx/main/Kekekkdjepsjxodjodidodi", true))()
+            getgenv().Kitten = 5
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zkkekjdjosjdodsjwoekdkskdksksuxisjeufu/Cuaaguaokchafhoochepxiyggu933yg9du9gd9gu399uudx/main/Kekekkdjepsjxodjodidodi",true))()
+    end    
+})
+
+Tabs.Reach:AddButton({
+  Title = "Tps Infinite Soccer GUI",
+  Callback = function()
+            getgenv().Kitten = 5
+loadstring(game:HttpGet("https://pastebin.com/raw/NnSYvFAa",true))()
+    end    
+})
+    
+Tabs.Reach:AddButton({
+Title = "Revamped TPS UI (by strandedlukas)",
+Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/strandedlukas/Revamped-Ui-Tps/main/Strandedlukas"))();
+  end
+})
+
+Tabs.Reach:AddButton({
+  Title = "Tps Ultimate GUI (wont work without whitelist)",
+  Callback = function()
+      Library:Notify({
+          Title = "Executed",
+          Content = "Executed! enjoy",
+          Duration = 5 
+      })
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/strandedlukas/TPS-ultimate-GUI/main/Protected_6075143873069690.lua.txt"))();
+  end
+})
+
+Tabs.Reach:AddButton({
+  Title = "Mps Gui",
+  Callback = function()
+      Library:Notify({
+          Title = "Executed",
+          Content = "executed!",
+          Duration = 5 
+      })
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/strandedlukas/Mpsgui/main/77_YD7RX2EYFRRQDA.lua"))();
+  end
+})
+
+
+Tabs.ImprovedReact:AddButton({
+  Title = "Best React",
+  Callback = function()
+            getgenv().Kitten = 5
+RunStepped = game:GetService("RunService").RenderStepped:Connect(function()
+              if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                  if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.TPSSystem.TPS.Position).Magnitude <= DistanceReach then
+                      if game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 1 then
+                          firetouchinterest(game.Players.LocalPlayer.Character["Right Leg"], game.Workspace.TPSSystem.TPS, 0)
+                          firetouchinterest(game.Players.LocalPlayer.Character["Right Leg"], game.Workspace.TPSSystem.TPS, 1)
+                      elseif game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 2 then
+                          firetouchinterest(game.Players.LocalPlayer.Character["Left Leg"], game.Workspace.TPSSystem.TPS, 0)
+                          firetouchinterest(game.Players.LocalPlayer.Character["Left Leg"], game.Workspace.TPSSystem.TPS, 1)
+                      end
+                  end
+              end
+              if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                  if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.TPSSystem.TPS.Position).Magnitude <= DistanceReach then
+                      if game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 1 then
+                          firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], game.Workspace.TPSSystem.TPS, 0)
+                          firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], game.Workspace.TPSSystem.TPS, 1)
+                      elseif game.Lighting[game.Players.LocalPlayer.Name].PreferredFoot.Value == 2 then
+                          firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], game.Workspace.TPSSystem.TPS, 0)
+                          firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], game.Workspace.TPSSystem.TPS, 1)
+                      end
+                  end
+              end
+          end)
+    
+          RunStepped:Disconnect()
+      end
+})
+
+Tabs.ImprovedReact:AddButton({
+Title = "Right Foot",
+Callback = function()
+
+                    _G.BallName = "TPS"
+_G.Magnitude = 3.8
+_G.Enabled = true
+
+
+-- DONT TOUCH ANYTHING BELOW THIS
+
+_G.Path = nil
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+local leg = game.Players.LocalPlayer.Character["Right Leg"]
+local left = game.Players.LocalPlayer.Character["Left Arm"]
+local arm = game.Players.LocalPlayer.Character["Right Arm"]
+local torso = game.Players.LocalPlayer.Character.Torso
+
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+mouse.KeyDown:connect(function()
+                           if _G.Path == nil then
+  if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                      if balls.Name == _G.BallName then
+                              _G.Path = balls.Parent
+                      if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+firetouchinterest(head, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+      if _G.Enabled == true then
+  for i, balls2 in pairs(_G.Path:GetChildren()) do
+                        if balls2.Name == _G.BallName then
+                                            if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+             end
+          end
+      end
+      end
+end
+end)
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+          mouse.Button1Down:Connect(function()
+                           if _G.Path == nil then
+  if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                      if balls.Name == _G.BallName then
+                              _G.Path = balls.Parent
+                      if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+      if _G.Enabled == true then
+  for i, balls2 in pairs(_G.Path:GetChildren()) do
+                        if balls2.Name == _G.BallName then
+                                            if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+             end
+          end
+      end
+      end
+end
+end)	
   end    
 })
 
 Tabs.ImprovedReact:AddButton({
-  Title = "Right Foot",
-  Callback = function()
+Title = "Left Foot",
+Callback = function()
 
-    _G.BallName = "TPS"
-    _G.Magnitude = 3.8
-    _G.Enabled = true
+                      _G.BallName = "TPS"
+_G.Magnitude = 4
+_G.Enabled = true
 
-    local RunService = game:GetService("RunService")
-    RunService.Stepped:Connect(function()
-        if _G.Enabled then
-            for _, balls in pairs(game.Workspace:GetChildren()) do
-                if balls.Name == _G.BallName then
-                    _G.Path = balls.Parent
-                    if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
-                        firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], balls, 0)
-                        firetouchinterest(game.Players.LocalPlayer.Character["Torso"], balls, 0)
-                        firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], balls, 0)
-                        firetouchinterest(game.Players.LocalPlayer.Character["LeftFoot"], balls, 0)
-                        wait()
-                        firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], balls, 1)
-                        firetouchinterest(game.Players.LocalPlayer.Character["Torso"], balls, 1)
-                        firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], balls, 1)
-                        firetouchinterest(game.Players.LocalPlayer.Character["LeftFoot"], balls, 1)
-                    end
-                end
-            end
-        elseif _G.Path ~= nil then
-            if _G.Enabled == true then
-                for _, balls2 in pairs(_G.Path:GetChildren()) do
-                    if balls2.Name == _G.BallName then
-                        if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
-                            firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], balls2, 0)
-                            firetouchinterest(game.Players.LocalPlayer.Character["Torso"], balls2, 0)
-                            firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], balls2, 0)
-                            firetouchinterest(game.Players.LocalPlayer.Character["LeftFoot"], balls2, 0)
-                            wait()
-                            firetouchinterest(game.Players.LocalPlayer.Character["RightLowerLeg"], balls2, 1)
-                            firetouchinterest(game.Players.LocalPlayer.Character["Torso"], balls2, 1)
-                            firetouchinterest(game.Players.LocalPlayer.Character["LeftLowerLeg"], balls2, 1)
-                            firetouchinterest(game.Players.LocalPlayer.Character["LeftFoot"], balls2, 1)
-                        end
-                    end
-                end
-            end
-        end
-    end)
 
-    -- Aggiungi qui il nuovo codice
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF17.Script.Disabled = false
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF18.Active = true
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF18.Selectable = true
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF18.Script.Disabled = false
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF19.Active = true
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF19.Selectable = true
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF19.Script.Disabled = false
-    game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF20.Active = true
+-- DONT TOUCH ANYTHING BELOW THIS
 
-    local trackNames = {
-        "OldMKickL", "OldMKick", "OldLKickL", "OldLKick", "MKickL",
-        "MKick", "LKickL", "LKick", "OldDribbleL", "OldDribble",
-        "DribbleL", "Dribble"
-    }
-    if table.find(trackNames, AnimationTrack.Name) then
-        if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.TPSSystem.TPS.Position).Magnitude < 3.45 then
-            if game.Players.LocalPlayer.Backpack.Curving.Value == 2 then
-                wait(0.1)
-                local A_1T = game:GetService("Workspace").TPSSystem.TPS
-                local A_2T = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-                local EventT = game:GetService("Workspace").FE.Actions.KickC1
-                EventT:FireServer(A_1T, A_2T)
-                wait(0.2)
-                EventT:FireServer(A_1T, A_2T)
-            elseif game.Players.LocalPlayer.Backpack.Curving.Value == 1 then
-                wait(0.1)
-                local A_1 = game:GetService("Workspace").TPSSystem.TPS
-                local A_2 = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-                local Event = game:GetService("Workspace").FE.Actions.KickC2
-                Event:FireServer(A_1, A_2)
-                wait(0.2)
-                Event:FireServer(A_1, A_2)
-            end
-        end
-    end
-  end
+_G.Path = nil
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+local leg = game.Players.LocalPlayer.Character["Left Leg"]
+local left = game.Players.LocalPlayer.Character["Left Arm"]
+local arm = game.Players.LocalPlayer.Character["Right Arm"]
+local torso = game.Players.LocalPlayer.Character.Torso
+
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+mouse.KeyDown:connect(function()
+                           if _G.Path == nil then
+  if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                      if balls.Name == _G.BallName then
+                              _G.Path = balls.Parent
+                      if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+firetouchinterest(head, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+      if _G.Enabled == true then
+  for i, balls2 in pairs(_G.Path:GetChildren()) do
+                        if balls2.Name == _G.BallName then
+                                            if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+             end
+          end
+      end
+      end
+end
+end)
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+          mouse.Button1Down:Connect(function()
+                           if _G.Path == nil then
+  if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                      if balls.Name == _G.BallName then
+                              _G.Path = balls.Parent
+                      if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+      if _G.Enabled == true then
+  for i, balls2 in pairs(_G.Path:GetChildren()) do
+                        if balls2.Name == _G.BallName then
+                                            if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+             end
+          end
+      end
+      end
+end
+end)
+  end    
 })
 
--- Nuovo Toggle per Blue Flame
-local BlueFlame = Tabs.Gamepasses:AddToggle("BlueFlame", {Title = "Blue Flame", Default = false })
 
-BlueFlame:OnChanged(function()
-  local Value = Options.BlueFlame.Value
-  if Value then
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = true
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundButton"
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://5366457711"
-      game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 2
-  else
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = false
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundDefaultButton"
-      game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://1595877615"
-      game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 1
+Tabs.Gamepasses:AddButton({
+Title = "Unlock All Celebrations",
+Callback = function()
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack1.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack1.CelebrationPack1.Style = "RobloxRoundButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack2.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack2.CelebrationPack2.Style = "RobloxRoundButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack3.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack3.CelebrationPack3.Style = "RobloxRoundButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack4.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack4.CelebrationPack4.Style = "RobloxRoundButton"
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack5.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack5.CelebrationPack5.Style = "RobloxRoundButton"
+              game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack6.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack6.CelebrationPack6.Style = "RobloxRoundButton"
+
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack7.Tick.Visible = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.CelebrationPack7.CelebrationPack7.Style = "RobloxRoundButton"
+  
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package1.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package2.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package3.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package4.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package5.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package6.Button.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.Package7.Button.Visible = false
+
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF04.Active = true
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF04.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF04.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF05.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF05.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF05.Script.Disabled = false
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF06.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF06.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF06.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF05.Script.Disabled = false
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF06.Active = true
+
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF07.Active = true
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF07.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF07.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF08.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF08.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF08.Script.Disabled = false
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF09.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF09.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF09.Script.Disabled = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF10.Active = true
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF10.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF10.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF11.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF11.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF11.Script.Disabled = false
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF12.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF12.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF12.Script.Disabled = false
+
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF13.Active = true
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF13.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF13.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF14.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF14.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF14.Script.Disabled = false
+ game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF15.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF15.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF22.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF23.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF23.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF23.Script.Disabled = false
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF24.Active = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF24.Selectable = true
+  game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF24.Script.Disabled = false
+      game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF22.MouseButton1Click:Connect(function()
+  require(game.Players.LocalPlayer.Backpack.CelebrationsModule).Celebration22()
+end)
+
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF23.MouseButton1Click:Connect(function()
+  require(game.Players.LocalPlayer.Backpack.CelebrationsModule).Celebration23()
+end)
+
+game:GetService("Players").LocalPlayer.PlayerGui.Start.Celebrations.CelebrationsSelect.SF24.MouseButton1Click:Connect(function()
+  require(game.Players.LocalPlayer.Backpack.CelebrationsModule).Celebration24()
+end)
+    end
+})
+AnimationTrack.Name == "OldTackle" then
+          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.TPSSystem.TPS.Position).Magnitude < 4.87 then
+              wait(0.8)
+                      local A_1 = game:GetService("Workspace").TPSSystem.TPS
+      local A_2 = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+      local A_3 = 30
+      local A_4 = Vector3.new(4000000, 700, 4000000)
+      local Event = game:GetService("Workspace").FE.Actions.KickG1
+      Event:FireServer(A_1, A_2, A_3, A_4)
+      
+              end
+          end
+      end)
+           if Value == "Default" then
+      ballSound.SoundId = "rbxassetid://2516069845"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
+  elseif Value == "OOF!" then
+      ballSound.SoundId = "rbxassetid://5143383166"
+      ballSound.PlaybackSpeed = 1
+      ballSound.Volume = 2
+  elseif Value == "Neverlose" then
+      ballSound.SoundId = "rbxassetid://6607204501"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
+  elseif Value == "Rust" then
+      ballSound.SoundId = "rbxassetid://1255040462"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
+  elseif Value == "Bruh" then
+      ballSound.SoundId = "rbxassetid://4275842574"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
+  elseif Value == "TF2" then
+      ballSound.SoundId = "rbxassetid://2868331684"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
+      elseif Value == "UwU" then
+      ballSound.SoundId = "rbxassetid://8679659744"
+      ballSound.PlaybackSpeed = 0.7
+      ballSound.Volume = 0.7
   end
 end)
 
--- Aggiunta del nuovo codice
-game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.RandomWeather.RandomWeather.Style = "RobloxRoundDefaultButton"
-game:GetService("Players").LocalPlayer.Backpack.TackleGamePass.Value = false
-AnimationTackleLoop:Disconnect()
 
-return Library
 
-    
+local TrailColor = Tabs.Other:AddColorpicker("TrailColor", {
+  Title = "Trail Color",
+  Default = defaultColorSequence.Keypoints[1].Value  -- Get the color from the first keyframe of the default sequence
+})
+
+TrailColor:OnChanged(function(color)
+  local newColorSequence = ColorSequence.new(color)
+  game.Workspace.TPSSystem.TPS.Trail.Color = newColorSequence
+end)
+
+local RainbowTrail = Tabs.Other:AddToggle("RainbowTrail", {Title = "Rainbow Trail", Default = false })
+
+RainbowTrail:OnChanged(function()
+  local arg = Options.RainbowTrail.Value
+
+  if arg then
+      local speed = 15 -- Change to speed you want
+      _G.RANB = true
+      while _G.RANB do
+          for i = 0, 1, 0.001 * speed do
+              local startColor = Color3.fromHSV(i, 1, 1)
+              local endColor = Color3.fromHSV(i, 1, 1)
+              local sequence = ColorSequence.new(startColor, endColor)
+              game.Workspace.TPSSystem.TPS.Trail.Color = sequence
+              wait()
+          end
+end
+
+return library
+      
